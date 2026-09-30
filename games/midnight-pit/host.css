@@ -1,28 +1,34 @@
 :root {
-  --rf-game-max-width: 100vw;
+  --rf-game-max-width: 100%;
   --rf-game-aspect-ratio: auto;
 }
 
 html,
 body {
   margin: 0;
-  height: 100%;
   background: #120e0c;
   overflow: hidden;
 }
 
-#root {
-  width: 100%;
+#root,
+.rf-game-frame {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
   max-width: none !important;
-  height: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  min-height: -webkit-fill-available;
   margin: 0 !important;
+  aspect-ratio: auto !important;
+  border: 0 !important;
+  background: #120e0c;
 }
 
-.rf-game-frame {
+.rf-frame-chrome,
+.rf-frame-viewport,
+.rf-frame-viewport > iframe {
   width: 100%;
-  max-width: none;
   height: 100%;
-  aspect-ratio: auto;
-  border: 0;
-  background: #120e0c;
 }
