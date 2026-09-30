@@ -1,0 +1,18 @@
+{
+  "name": "midnight-pit",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "friendsdk dev games/midnight-pit --host 127.0.0.1 --port 4173",
+    "build": "friendsdk build games/midnight-pit --outdir preview",
+    "check": "friendsdk check games/midnight-pit"
+  },
+  "dependencies": {
+    "@rarefriends/friendsdk": "file:vendor/rarefriends-friendsdk-0.1.4.tgz",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  }
+}

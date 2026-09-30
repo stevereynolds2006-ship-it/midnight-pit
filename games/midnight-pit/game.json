@@ -1,0 +1,13 @@
+{
+  "name": "Midnight Pit",
+  "consumable": "Seal",
+  "price": "1000000000000000000",
+  "outcomes": [
+    { "name": "Ash Chip", "chanceBps": 4200, "reward": "150000000000000000" },
+    { "name": "Alley Rumor", "chanceBps": 2500, "reward": "400000000000000000" },
+    { "name": "Brass Marker", "chanceBps": 1800, "reward": "1000000000000000000" },
+    { "name": "Velvet Badge", "chanceBps": 1000, "reward": "2500000000000000000" },
+    { "name": "Oracle Lens", "chanceBps": 400, "reward": "5000000000000000000" },
+    { "name": "Genesis Spark", "chanceBps": 100, "reward": "10000000000000000000" }
+  ]
+}
