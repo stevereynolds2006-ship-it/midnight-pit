@@ -1,2 +1,21 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Midnight Pit</title><link rel="stylesheet" href="./runtime.css"><link rel="stylesheet" href="./layout.css"></head><body><main id="root"></main><script src="./runtime.js"></script></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Midnight Pit</title><link rel="stylesheet" href="./runtime.css"><link rel="stylesheet" href="./layout.css"></head><body><main id="root"></main><script>
+(function () {
+  var eth = window.ethereum;
+  if (eth && typeof eth.request === "function" && typeof eth.on === "function" && typeof eth.removeListener !== "function" && typeof eth.off === "function") {
+    eth.removeListener = eth.off.bind(eth);
+  }
+  var root = document.documentElement;
+  function fit() {
+    var viewport = window.visualViewport;
+    var height = viewport ? viewport.height : window.innerHeight;
+    root.style.height = Math.round(height) + "px";
+  }
+  fit();
+  window.addEventListener("resize", fit);
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener("resize", fit);
+    window.visualViewport.addEventListener("scroll", fit);
+  }
+})();
+</script><script src="./runtime.js"></script></body></html>
