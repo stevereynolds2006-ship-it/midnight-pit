@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "friendsdk dev games/midnight-pit --host 127.0.0.1 --port 4173",
-    "build": "friendsdk build games/midnight-pit --outdir preview",
+    "build": "friendsdk build games/midnight-pit --outdir preview && node scripts/fit-preview.mjs preview",
     "check": "friendsdk check games/midnight-pit"
   },
   "dependencies": {

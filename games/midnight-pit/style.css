@@ -6,7 +6,7 @@
   --wax: #d64532;
   --line: #2a221c;
   --felt: #1a1410;
-  width: min(960px, 100%);
+  width: 100%;
   margin: 0 auto;
   min-height: 100dvh;
   display: flex;
@@ -637,6 +637,13 @@
 }
 
 @media (max-width: 839px) {
+  .cabinet {
+    height: 100dvh;
+    max-height: 100dvh;
+    min-height: 0;
+    overflow: auto;
+  }
+
   .deploy-bar {
     position: sticky;
     bottom: 0;

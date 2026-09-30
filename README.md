@@ -6,7 +6,7 @@ Your Rare Friend stands a night market. Spend 1 simulated $RAREFRIENDS to deploy
 
 **Playable preview:** https://stevereynolds2006-ship-it.github.io/midnight-pit/
 
-The preview is the FriendSDK host. It stays simulated: no live RF moves and nothing is signed beyond wallet connection. You need a browser wallet holding a Rare Friends Generations NFT, generation 1 or higher, on Robinhood mainnet (chain 4663).
+Open that link in MetaMask's browser. The pit fills the screen. It stays simulated: no live RF moves and nothing is signed beyond wallet connection. You need a wallet holding a Rare Friends Generations NFT, generation 1 or higher, on Robinhood mainnet (chain 4663).
 
 ## Run it
 
